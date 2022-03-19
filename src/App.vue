@@ -1,26 +1,27 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <SearchBar :addListItems="addListItems" />
+  <List :ListItems="ListItems" />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import SearchBar from '@/components/SearchBar.vue'
+import List from '@/components/List.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    SearchBar,
+    List
+  },
+  data() {
+    return {
+      ListItems: []
+    }
+  },
+  methods: {
+    addListItems(items) {
+      this.ListItems = items
+    }
   }
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
