@@ -9,13 +9,13 @@ module.exports = {
     // override/add rules settings here, such as:
     // 'vue/no-unused-vars': 'error'
     'vue/multi-word-component-names': [
-      'warning',
+      'warn',
       {
         ignores: ['List']
       }
     ],
     'vue/max-attributes-per-line': [
-      'warning',
+      'warn',
       {
         singleline: {
           max: 2
