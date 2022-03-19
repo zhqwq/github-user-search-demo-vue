@@ -22,7 +22,7 @@ export default {
   },
   methods: {
     onSearch() {
-      fetch(`http://api.github.com/search/users?q=${this.form.name}`)
+      fetch(`https://api.github.com/search/users?q=${this.form.name}`)
         .then(res => res.json())
         .then(data => this.addListItems(data.items))
         .catch(error => console.error(error))
