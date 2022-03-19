@@ -1,4 +1,4 @@
-# github-user-search-demo-vue
+# Github 用户搜索 Vue Demo
 
 ## Project setup
 ```
